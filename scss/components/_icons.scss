@@ -1,0 +1,36 @@
+.icons {
+    display: flex;
+    position: absolute;
+    bottom: 26px;
+    left: 32px;
+    transition: opacity .1s ease-in-out;
+    pointer-events: none;
+}
+
+.fab {
+    margin: 0 16px;
+    color: #fff;
+    z-index: 10;
+    transition: color 0.3s ease-in-out;
+
+    &:nth-of-type(1) {
+        margin-left: 0;
+    }
+}
+
+
+.blog-icons {
+    position: absolute;
+    bottom: 26px;
+    left: 32px;
+    transition: opacity .1s ease-in-out;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.blog-icon {
+    color: white;
+    z-index: 10;
+    text-transform: uppercase;
+}
+

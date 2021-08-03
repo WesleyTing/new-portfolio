@@ -29,7 +29,36 @@ a {
   text-decoration: none;
 
   @include on-event {
-    color: $text-color;
-    text-decoration: underline;
+    // color: $text-color;
+    // text-decoration: underline;
   }
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.show {
+  position: fixed;
+  overflow-y: scroll;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include respond-to('medium') {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include respond-to('large') {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+

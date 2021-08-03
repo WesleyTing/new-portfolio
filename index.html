@@ -10,10 +10,163 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="wrapper">
+
+    <header>
+        <section class="top-bar">
+
+            <a href="index.html" class="left-container">
+                    <img src="images/memoji/home-emoji.png" alt="Winking Memoji">
+                    
+                
+                <span class="nametag">Wesley Ting</span>
+
+            </a>
+
+            <div class="right-container">
+
+                <div class="hamburger">
+                    <span class="bar bar-1"></span>
+                    <span class="bar bar-2"></span>
+                    <span class="bar bar-3"></span>
+                    <span class="bar bar-4"></span>
+                </div>
+
+                <nav class="nav-list">
+                    <ul class="nav-content">
+                        <li class="highlight-page"><a href="work.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </section>
+
+        <nav class="overlay">
+            <ul class="overlay-content">
+                <li><a href="work.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+
+        <section class="intro">
+
+            <p class="intro-name highlight">Hey there I'm Wesley!</p>
+
+            <h1 class="intro-title">Web Developer / Designer.</h1>
+
+            <p class="intro-description">I'm a freelance front-end web developer, based out of Vancouver. <span class="narrow"></span> Look around and view my <a class="highlight" href="">work</a> or learn more <a class="highlight" href="">about</a>  me.</p>
+
+        </section>
+
+        <section class="my-work">
+
+            <h2>My Work</h2>
+
+            <div class="work-grid">
+
+                <figure class="grid-item work-1">
+                    <a href="work.html" class="work-container">
+                        <p class="work-title">Movie Database</p>
+                        <p class="work-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, corrupti?</p>
+                        <div class="icons">
+                            <i href="https://reactjs.org/" class="fab fa-react fa-lg" ></i>
+                            <i href="https://sass-lang.com/" class="fab fa-sass fa-lg"></i>
+                            <i href="https://www.javascript.com/" class="fab fa-js-square fa-lg"></i>
+                        </div>
+                    </a>
+                </figure>
+
+                <figure class="grid-item work-2">
+                    <a href="work/artist-portfolio" class="work-container">
+                        <p class="work-title">Artist Portfolio</p>
+                        <p class="work-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, corrupti?</p>
+                        <div class="icons">
+                            <i href="https://wordpress.org/" class="fab fa-wordpress fa-lg"></i>
+                            <i href="https://www.php.net/" class="fab fa-php fa-lg"></i>
+                            <i href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="fab fa-css3-alt fa-lg"></i>
+                        </div>      
+                    </a>
+                </figure>
+
+                <figure class="grid-item work-3">
+                    <a href="work/dj-website.html" class="work-container">
+                        <p class="work-title">DJ Website</p>
+                        <p class="work-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, corrupti?</p>
+                        <div class="icons">
+                            <i href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="fab fa-html5 fa-lg"></i>
+                            <i href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="fab fa-css3-alt fa-lg"></i>
+                            <i href="https://www.javascript.com/" class="fab fa-js-square fa-lg"></i>
+                        </div>
+                    </a>
+                </figure>
+
+                <figure class="grid-item work-4">
+                    <a href="work/portfolio" class="work-container">
+                        <p class="work-title">UX/UI Portfolio</p>
+                        <p class="work-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, corrupti?</p>
+                        <div class="icons">
+                            <i href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="fab fa-html5 fa-lg"></i>
+                            <i href="https://sass-lang.com/" class="fab fa-sass fa-lg"></i>
+                            <i href="https://www.javascript.com/" class="fab fa-js-square fa-lg"></i>
+                        </div>
+                    </a>
+                </figure>
+
+                <figure class="grid-item blog-1">
+                    <!-- <div class="ribbon ribbon-top-right"><span>Blog Post</span></div> -->
+                    <a href="blog" class="work-container">
+                        <p class="work-title">The Codepen Journey</p>
+                        <p class="work-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, corrupti?</p>
+                        <div class="blog-icons">
+                            <a href="blog/codepen.html" class="fas fa-rss blog-icon blog-icon"></a>
+                    </a>
+                    </div>
+                </figure>
+
+                <figure class="grid-item blog-2">
+                    <!-- <div class="ribbon ribbon-top-right"><span>Blog</span></div> -->
+                    <a href="blog" class="work-container">
+                        <p class="work-title">Music Taste</p>
+                        <p class="work-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, corrupti?</p>
+                        <div class="blog-icons">
+                            <a href="blog/music.html" class="fas fa-rss blog-icon"></a>
+                        </div>
+                    </a>
+                </figure>
+
+
+        </section>
+
+    </main>
+
+    </div>
+
+    <!-- <hr class="footer-line"> -->
+
+    <footer>
+        <p class="copyright">&copy; 2021 Wesley Ting</p>
+
+        <div class="social-container">
+            <i class="fab fa-linkedin fa-lg"> <a href="https://www.linkedin.com/in/wesleytingdev/"></a></i>
+            <i class="fab fa-github-square fa-lg"><a href="https://github.com/WesleyTing"></a></i>
+            <i class="fab fa-codepen"><a href="https://codepen.io/wesleyting"></a></i>
+        </div>
+        
+    </footer>
+
 
     
 

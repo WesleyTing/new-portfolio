@@ -5,3 +5,17 @@ body {
   color: $text-color;
   font: normal 125% / 1.4 $text-font-stack;
 }
+
+h1, h2, h3, h4, h5 {
+  color: $text-color;
+  font-family: $header-font-stack;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.highlight {
+  color: #0400ff;
+}

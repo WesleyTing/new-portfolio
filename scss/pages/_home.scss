@@ -1,3 +1,199 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+
+.intro {
+
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    
+    @media (min-width: 950px) {      
+        margin-top: 6rem;
+        margin-bottom: 6rem;
+
+
+    }
+
+    @media (min-width: 1030px) {
+        .narrow {
+            display: block;
+        }
+    }
+
+
+
+    .intro-name {
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .intro-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-weight: 700;
+
+        @media (min-width: 400px) {
+            font-size: 26px;
+        }
+
+        @media (min-width: 500px) {
+            font-size: 32px;
+        }
+
+        @media (min-width: 600px) {
+            font-size: 38px;
+        }
+
+        @media (min-width: 950px) {
+            font-size: 52px;
+        }
+    }
+
+    .intro-description {
+        margin: 0;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.5;
+
+        @media (min-width:500px) {
+            font-size: 22px;
+        }
+
+        @media (min-width: 600px) {
+            font-size: 26px;
+        }
+
+        @media (min-width: 950px) {
+            font-size: 28px;
+        }
+    }
+
+}
+
+.work-grid {
+    margin: 2rem 0 0;
+    display: grid;
+    row-gap: 3rem;
+
+    @include respond-to('medium') {
+        // grid-template-columns: repeat(auto-fill,minmax(245px,1fr));
+        grid-template-columns: repeat(auto-fill,minmax(260px,1fr));
+        grid-gap: 3rem;
+    }
+
+}
+
+.grid-item {
+    position: relative;
+    margin: 0;
+    border-radius: 8px;
+    display: block;
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: 0px;
+        left: 0;
+        right: 0;
+        top: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0695035) 0%, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.165033) 22.4%, rgba(0, 0, 0, 0.7) 100%);
+        border-radius: 0px 0px 8px 8px;
+        pointer-events: none;
+    }
+
+    .work-description {
+        color: white;
+        position: absolute;
+        top: 100px;
+        margin: 0 28px 32px;
+        opacity: 0;
+        transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+        pointer-events: none;
+    }
+}
+
+
+.grid-item:hover {
+
+    .icons {
+        opacity: 0;
+    }
+
+    .blog-icons {
+        opacity: 0;
+    }
+
+    .work-description{
+        opacity: 1;
+        transform: translateY(-10px);
+        display: block;
+        z-index: 10;
+    }
+
+    &:after {
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+    }
+}
+
+// .my-work {
+//     margin-top: 3.5rem;
+// }
+
+.work-container {
+
+
+    .work-title {
+        color: white;
+        position: absolute;
+        left: 26px;
+        font-size: 28px;
+        top: 20px;
+        margin: 0;
+        z-index: 10;
+        font-family: $header-font-stack;
+        max-width: 85%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+}
+
+.work-1 {
+    background-image: url("../images/preview-images/movie-database.png");
+}
+
+.work-2 {
+    background-image: url("../images/preview-images/artist-portfolio.png");
+}
+
+.work-3 {
+    background-image: url("../images/preview-images/dj-services.png");
+}
+
+.work-4 {
+    background-image: url("../images/preview-images/ux-portfolio.png");
+}
+
+.blog-1 {
+    background-image: url("../images/preview-images/blog-1.png");
+}
+
+.blog-2 {
+    background-image: url("../images/preview-images/blog-2.png");
+}
+
