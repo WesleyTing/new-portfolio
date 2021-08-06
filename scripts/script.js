@@ -5,3 +5,11 @@ btn.addEventListener('click', function(){
     body.classList.toggle('show');
 });
 
+function checkWidth() {
+    if ($(window).width() < 950) {
+        $('#body').removeClass('show');
+    }
+}
+
+$(window).resize(checkWidth);
+

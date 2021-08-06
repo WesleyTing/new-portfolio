@@ -6,7 +6,32 @@
     width: 100%;
     height: 300px;
     object-fit: cover;
-    // object-position: 0% 20%;
+    object-position: 0% 40%;
     border-radius: 8px;
+
+    @include respond-to('medium') {
+        width: 48%;
+    }
+
+    @include respond-to('large') {
+        height: 400px;
+        object-position: 0% 30%;
+    }
+
+}
+
+.about-paragraph {
+    @include respond-to('medium') {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+    }
+}
+
+.about-start {
+
+    @include respond-to('medium') {
+        width: 48%;
+    }
 }
 
