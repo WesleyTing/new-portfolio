@@ -35,9 +35,17 @@
 @import
   'pages/about',
   'pages/contact',
-  'pages/home';
+  'pages/home',
+  'pages/work-pages';
 
 
 // 7. Themes
 @import
   'themes/default';
+
+
+// Required Core Stylesheet
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core";
+
+// Optional Theme Stylesheet
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme";

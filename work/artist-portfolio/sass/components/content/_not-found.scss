@@ -1,0 +1,35 @@
+.site-main.not-found {
+    max-width: 800px;
+    text-align: center;
+    margin: 80px auto 60px;
+
+    h2 {
+        font-size: 1.5rem;
+
+        @media (min-width: 800px) {
+            font-size: 2rem;
+        }  
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    a:hover {
+        color: $gold;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+
+        @media (min-width: 600px) {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+    }
+}

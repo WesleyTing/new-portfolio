@@ -13,3 +13,4 @@ function checkWidth() {
 
 $(window).resize(checkWidth);
 
+

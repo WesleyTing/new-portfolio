@@ -1,0 +1,119 @@
+.contact-header {
+    @include headerUnderline;
+    margin-bottom: 15px;
+}
+
+.contact-header::after {
+    @include goldUnderline;
+}
+
+.contact-content {
+    margin: 0;
+}
+
+div.wpforms-container-full {
+    padding-bottom: 15px;
+}
+
+div.wpforms-container-full .wpforms-form input.wpforms-field-medium, 
+div.wpforms-container-full .wpforms-form select.wpforms-field-medium, 
+div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium {
+    max-width: 100%;
+
+    div {
+        width: 100%;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-label.wpforms-field-label {
+    margin: 0 0 10px;
+}
+
+div.wpforms-container-full .wpforms-form input[type=submit], 
+div.wpforms-container-full .wpforms-form button[type=submit], 
+div.wpforms-container-full .wpforms-form .wpforms-page-button {
+    background-color: $darkBlue;
+    color: white;
+    margin-top: 20px;
+    padding: 15px 26px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        border: 1px $darkBlue solid;
+        background-color: white;
+        color: $darkBlue;
+    }
+}
+
+.contact-info {
+    h2 {
+        margin-bottom: 0;
+        @include headerUnderline;
+        font-size: 21px;
+    }
+
+    h2::after {
+        @include goldUnderline;
+    }
+
+    p {
+        margin: 10px 0 30px 0;
+        font-size: 15px;
+    }
+}
+
+.acf-map {
+    height: 400px;
+    max-width: 800px;
+    margin: 10px auto 120px;
+}
+
+.contact-section {
+    margin: auto;
+}
+
+@media (min-width: 610px) {
+    div.wpforms-container-full .wpforms-form .wpforms-field .wpforms-field-row:last-of-type {
+        display: flex;
+    }
+
+    div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium div {
+        margin-left: 10px;
+    }
+
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 800px) {
+    
+    .post-27 {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    div.wpforms-container-full .wpforms-form .wpforms-field-row .wpforms-field-medium, 
+    div.wpforms-container-full .wpforms-form input.wpforms-field-medium {
+        width: 100%;
+    }
+
+    .contact-info {
+
+        h2 {
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+    }
+
+}
+
+

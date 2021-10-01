@@ -1,0 +1,190 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to work pages page.
+// -----------------------------------------------------------------------------
+
+
+.work-pages-main {
+
+    .icons {
+        display: block;
+    }
+
+    .fab {
+        color: black;
+    }
+
+}
+
+.hero-banner {
+
+    background-color: #373d4d;
+
+    .hero-banner-image-text {
+        max-width: 1400px;
+        margin: 0 auto;    
+        height: 300px;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+        @media (min-width:650px) {
+            height: 400px;
+        }
+
+        @include respond-to('large') {
+            height: 600px;
+        }
+    }
+}
+
+.hero-banner-text {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+
+    @media (min-width:650px) {
+        left: 10%;
+    }
+
+
+    h1, p {
+        color: white;
+        margin: 0;
+    }
+
+    h1 {
+
+        @media (min-width:650px) {
+            font-size: 3.5rem;
+        }
+
+        @include respond-to('large') {
+            font-size: 6rem;
+        }
+
+    }
+
+    p {
+        font-weight: 200;
+
+        @media (min-width:650px) {
+            font-size: 1.5rem;
+        }
+
+        @include respond-to('large') {
+            font-size: 2rem;
+        }
+    }
+
+    a {
+        display: block;
+        width: 170px;
+        text-align: center;
+        border: 1px solid #003EDC;
+        border-radius: 6px;
+        padding: 12px 0;
+        color: white;
+        background-color: #003EDC;
+        font-family: $header-font-stack;
+        margin-top: 3rem;
+
+    }
+}
+
+.hero-banner-image-text {
+    background-image: url("/images/preview-images/dj-website-work-page.png");
+}
+
+
+.work-pages-main {
+
+    .glide__bullets {
+        bottom: 0;
+    }
+
+    .glide__bullet {
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 12px;
+        height: 12px;
+    }
+
+    .glide__bullet[class*=active] {
+        background-color: black;
+    }
+
+    .glide__bullet:focus, .glide__bullet:hover {
+        background-color: black;
+        border: 2px solid black;
+    }
+
+    .glide--swipeable {
+        cursor: default;
+    }
+}
+
+
+.overview {
+
+    margin-bottom: 3rem;
+
+    h2 {
+        margin: 3rem 0 0;
+    }
+}
+
+
+
+.split-content {
+
+    @include respond-to('large') {
+        display: flex;
+        justify-content: space-between;
+    
+        .split-content-left {
+            width: 60%;
+        }
+    
+        .split-content-right {
+            width: 20%;
+        }
+    }
+
+}
+
+.split-content-left {
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+}
+
+.split-content-right {
+
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .work-pages-icons {
+        margin-bottom: 3rem;
+    }
+
+    .work-page-icon {
+        margin-bottom: 22px;
+        width: 40%;
+    }
+
+    p {
+        margin: 0;
+        align-content: center;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+    }
+
+    .work-page-icon {
+        display: flex;
+        max-width: 120px;
+    }
+}

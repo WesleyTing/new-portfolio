@@ -62,13 +62,13 @@
 
     a:after {
         background: none repeat scroll 0 0 transparent;
-        bottom: -8px;
+        bottom: -10px;
         content: "";
         display: block;
-        height: 3px;
+        height: 5px;
         left: 50%;
         position: absolute;
-        background: #0400ff;;
+        background: $brand-color;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
     }
@@ -78,6 +78,8 @@
         left: 0; 
     }
 
+
+
     .highlight-page {
 
         a:after {
@@ -85,6 +87,10 @@
             left: 0; 
         }
 
+    }
+
+    a:hover:after + .highlight-page {
+        background: white;
     }
 
 }
@@ -124,7 +130,7 @@
     transition: opacity 0.5s ease-in-out;
     pointer-events: none;
 
-        .show &{
+        .show & {
             display: block;
             opacity: 1;
             pointer-events: visible;
@@ -147,12 +153,6 @@
         color: white;
         text-decoration: none;
         line-height: 5rem;
-    
-        @include respond-to('large') {
-            color: black;
-            line-height: 5rem;
-            font-size: 1.7rem;
-        }
     
         &:hover {
             color: white;

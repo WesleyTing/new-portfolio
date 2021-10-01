@@ -9,7 +9,7 @@
     margin-bottom: 4rem;
     
     @media (min-width: 950px) {      
-        margin-top: 6rem;
+        margin-top: 5rem;
         margin-bottom: 6rem;
 
 
@@ -69,7 +69,6 @@
             font-size: 28px;
         }
     }
-
 }
 
 .work-grid {
@@ -85,7 +84,7 @@
 
 }
 
-.grid-item {
+.grid-item, .grid-item--in-progress {
     position: relative;
     margin: 0;
     border-radius: 8px;
@@ -116,7 +115,8 @@
     .work-description {
         color: white;
         position: absolute;
-        top: 100px;
+        top: 80px;
+        left: -2px;
         margin: 0 28px 32px;
         opacity: 0;
         transition: opacity .2s ease-in-out, transform .2s ease-in-out;
@@ -174,26 +174,30 @@
 }
 
 .work-1 {
-    background-image: url("../images/preview-images/movie-database.png");
+    background-image: url("../images/preview-images/myfitcollection.png");
 }
 
 .work-2 {
-    background-image: url("../images/preview-images/artist-portfolio.png");
+    background-image: url("../images/preview-images/movie-database.png");
 }
 
 .work-3 {
-    background-image: url("../images/preview-images/dj-services.png");
-}
-
-.work-4 {
     background-image: url("../images/preview-images/ux-portfolio.png");
 }
 
-.blog-1 {
-    background-image: url("../images/preview-images/blog-1.png");
+.work-4 {
+    background-image: url("../images/preview-images/artist-portfolio.png");
 }
 
-.blog-2 {
-    background-image: url("../images/preview-images/blog-2.png");
+.work-5 {
+    background-image: url("../images/preview-images/dj-services.png");
+}
+
+.work-6 {
+    background-image: url("../images/preview-images/wip.png");
+    
+    .work-container {
+        cursor: not-allowed;
+    }
 }
 

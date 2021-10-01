@@ -1,0 +1,46 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+// Gold underline 
+
+@mixin headerUnderline {
+	position: relative;
+	display: inline-block;
+}
+
+@mixin goldUnderline {
+	content: "";
+	border-bottom: $gold 3px solid;
+	position: absolute;
+	height: 2px;
+	width: 25%;
+	background: $gold;
+	left: 2px;
+	top: 100%;
+}
+
+@mixin blueButton {
+	a {
+		background-color: $darkBlue;
+		padding: 6px 14px;
+		text-decoration: none;
+		transition: 0.3s all ease-in-out;
+		margin-top: 18px;
+		color: $white;
+		font-size: 14px;
+
+		&:hover, &:active {
+			color: $gold;
+		}
+	}
+}
+
