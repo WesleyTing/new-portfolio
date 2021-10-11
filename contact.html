@@ -68,23 +68,22 @@
         </section>
     
         <section class="contact-form">
-            <form action="">
+            <form action="contact-form.php" method="POST">
                 <div class="contact-name-email">
                     <span class="contact-name">
                         <label for="name">Name:</label><br>
-                        <input type="text" id="name"><br>
+                        <input type="text" name="Name" id="name"><br>
                     </span>
                     <span class="contact-email">
                         <label for="email">Email:</label><br>
-                        <input type="text" id="email"><br>
+                        <input type="text" name="Email" id="email"><br>
                     </span>
                 </div>
 
-
                 <label for="info">Write Me Something:</label><br>
-                <textarea cols="30" rows="5" id="info"></textarea>
+                <textarea name="Message" cols="30" rows="5" id="info"></textarea>
     
-                <button type="submit"><i class="fas fa-paper-plane fa-lg"></i></button>
+                <button type="submit" value="Send"><i class="fas fa-paper-plane fa-lg"></i></button>
                 
             </form>
         </section>
