@@ -834,7 +834,7 @@ footer {
     .contact-form .contact-name-email {
       display: flex;
       justify-content: space-between; } }
-  .contact-form button[type=submit] {
+  .contact-form .submit-button {
     display: block;
     border: 0;
     background: none;
@@ -844,7 +844,7 @@ footer {
     height: 52px;
     cursor: pointer;
     margin: 26px auto 0; }
-    .contact-form button[type=submit] i {
+    .contact-form .submit-button i {
       color: white;
       margin: 0; }
 
