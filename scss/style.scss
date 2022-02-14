@@ -29,6 +29,7 @@
   'components/grid',
   'components/overlay',
   'components/icons',
+  'components/toc',
   'components/hamburger';
 
 // 6. Page-specific styles
@@ -36,7 +37,17 @@
   'pages/about',
   'pages/contact',
   'pages/home',
-  'pages/work-pages';
+
+  // Work pages
+
+  'pages/work/work-pages',
+  'pages/work/token-studio',
+  'pages/work/coco',
+  'pages/work/graphic-portfolio',
+  'pages/work/reeltalk',
+  'pages/work/ux-ui-portfolio',
+  'pages/work/myfitcollection';
+
 
 
 // 7. Themes

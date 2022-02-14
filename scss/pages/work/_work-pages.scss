@@ -1,7 +1,24 @@
 // -----------------------------------------------------------------------------
-// This file contains styles that are specific to work pages page.
+// This file contains styles that are specific to work pages.
 // -----------------------------------------------------------------------------
 
+
+// Custom colored header for work pages
+.work-header {
+
+    .left-container .nametag {
+        color: white;
+    }
+
+    .hamburger .bar {
+        background: white;
+    }
+
+    .nav-content a {
+        color: white;
+        z-index: 10;
+    }
+}
 
 .work-pages-main {
 
@@ -17,36 +34,40 @@
 
 .hero-banner {
 
-    background-color: #373d4d;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;    
+    height: 300px;
+    position: relative;
+    z-index: 10;
 
-    .hero-banner-image-text {
+    .hero-banner-content {
         max-width: 1400px;
-        margin: 0 auto;    
-        height: 300px;
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-
-        @media (min-width:650px) {
-            height: 400px;
-        }
-
-        @include respond-to('large') {
-            height: 600px;
-        }
     }
+
+    @media (min-width:650px) {
+        height: 400px;
+    }
+
+    @include respond-to('large') {
+        height: 600px;
+    }
+
+    .hero-banner-image {
+        position: absolute;
+    }
+
 }
 
 .hero-banner-text {
     position: absolute;
-    top: 20%;
+    top: 5%;
     left: 5%;
+    z-index: 50;
 
     @media (min-width:650px) {
         left: 10%;
     }
-
 
     h1, p {
         color: white;
@@ -55,7 +76,9 @@
 
     h1 {
 
-        @media (min-width:650px) {
+        font-size: 2rem;
+
+        @media (min-width: 650px) {
             font-size: 3.5rem;
         }
 
@@ -79,7 +102,7 @@
 
     a {
         display: block;
-        width: 170px;
+        width: 140px;
         text-align: center;
         border: 1px solid #003EDC;
         border-radius: 6px;
@@ -87,39 +110,9 @@
         color: white;
         background-color: #003EDC;
         font-family: $header-font-stack;
-        margin-top: 3rem;
+        margin-top: 5rem;
+        font-size: 1rem;
 
-    }
-}
-
-.hero-banner-image-text {
-    background-image: url("/images/preview-images/dj-website-work-page.png");
-}
-
-
-.work-pages-main {
-
-    .glide__bullets {
-        bottom: 0;
-    }
-
-    .glide__bullet {
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 12px;
-        height: 12px;
-    }
-
-    .glide__bullet[class*=active] {
-        background-color: black;
-    }
-
-    .glide__bullet:focus, .glide__bullet:hover {
-        background-color: black;
-        border: 2px solid black;
-    }
-
-    .glide--swipeable {
-        cursor: default;
     }
 }
 
@@ -142,11 +135,11 @@
         justify-content: space-between;
     
         .split-content-left {
-            width: 60%;
+            width: 49%;
         }
     
         .split-content-right {
-            width: 20%;
+            width: 49%;
         }
     }
 
@@ -187,4 +180,48 @@
         display: flex;
         max-width: 120px;
     }
+}
+
+
+// Table of Contents
+
+.toc {
+    background: #f9f9f9;
+    border: 1px solid #aaa;
+    display: table;
+    margin-bottom: 1em;
+    margin: 3rem auto;
+    
+    padding: 20px 80px;
+}
+
+.toc-content {
+    padding: 0;
+}
+
+.toc-title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.toc li {
+    padding-bottom: 8px;
+    font-weight: 500;
+    // list-style: none;
+    line-height: 2rem;
+}
+
+
+.toc-sub-content li {
+    font-weight: 400;
+    color: grey;
+}
+
+.toc-section {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.toc-section:nth-child(1) {
+    margin-top: 30px;
 }

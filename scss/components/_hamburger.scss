@@ -10,7 +10,6 @@
   transition: .5s ease-in-out;
   cursor: pointer;
   z-index: 10000;
-  align-items: right;
 
   @include respond-to('large') {
     display: none;
