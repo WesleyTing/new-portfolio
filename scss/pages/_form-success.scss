@@ -1,0 +1,40 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the form success page.
+// -----------------------------------------------------------------------------
+
+.form-success{
+
+    .form-success-title {
+        
+        margin-top: 2rem;
+        margin-bottom: 0;
+
+        @include respond-to('medium') {
+            font-size: 3rem;
+        }
+
+        @include respond-to('large') {
+            margin-top: 3rem;
+            font-size: 3.5rem;
+        }
+
+    }
+
+    .form-success-text {
+        
+        margin-top: 0.8rem;
+        margin-bottom: 3rem;
+
+        @include respond-to('medium') {
+            font-size: 1.5rem;
+        }
+
+        @include respond-to('large') {
+            margin-top: 1rem;
+            font-size: 1.7rem;
+        }
+
+    }
+
+}
+
