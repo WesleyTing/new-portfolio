@@ -1,7 +1,75 @@
 // -----------------------------------------------------------------------------
-// This file contains all styles related to the grid layout of the site/application.
+// This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
+
+.intro {
+
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    
+    @media (min-width: 950px) {      
+        margin-top: 5rem;
+        margin-bottom: 6rem;
+
+
+    }
+
+    @media (min-width: 1030px) {
+        .narrow {
+            display: block;
+        }
+    }
+
+
+
+    .intro-name {
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+
+    .intro-title {
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 22px;
+        font-weight: 600;
+
+        @media (min-width: 400px) {
+            font-size: 26px;
+        }
+
+        @media (min-width: 500px) {
+            font-size: 32px;
+        }
+
+        @media (min-width: 600px) {
+            font-size: 38px;
+        }
+
+        @media (min-width: 950px) {
+            font-size: 52px;
+        }
+    }
+
+    .intro-description {
+        margin: 0;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 1.5;
+
+        @media (min-width:500px) {
+            font-size: 22px;
+        }
+
+        @media (min-width: 600px) {
+            font-size: 26px;
+        }
+
+        @media (min-width: 950px) {
+            font-size: 28px;
+        }
+    }
+}
 
 .work-grid {
     margin: 2rem 0 0;
@@ -81,6 +149,10 @@
     }
 }
 
+// .my-work {
+//     margin-top: 3.5rem;
+// }
+
 .work-container {
 
 
@@ -124,3 +196,4 @@
 .work-6 {
     background-image: url("../images/preview-images/token-studio.webp");
 }
+

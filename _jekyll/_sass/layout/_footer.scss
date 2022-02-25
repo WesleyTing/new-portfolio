@@ -1,0 +1,51 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+footer {
+
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    margin: 3rem auto 2rem;
+    width: 100%;
+
+    @include respond-to('medium') {
+        margin: 6rem auto 3rem;
+    }
+
+
+    .fab {
+        color: black;
+        margin: 0;
+        width: 30%;
+        text-align: right;
+
+    }
+
+    .copyright {
+        font-size: 16px;
+        font-weight: 600;
+        width: 50%;
+        margin: 0;
+    }
+
+}
+
+.social-container {
+    width: 40%;
+    justify-content: space-between;
+    max-width: 200px;
+}
+
+.social-container .fab {
+    // margin: 0 18px;
+
+    &:nth-child(3) {
+        margin-right: 0;
+    }
+}
+
+
+
+

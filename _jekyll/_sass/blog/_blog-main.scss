@@ -1,0 +1,61 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the blog page.
+// -----------------------------------------------------------------------------
+
+// Index Page
+
+.nametag {
+    color: black;
+}
+
+.nav-content a {
+    color: black;
+
+    &:hover,
+    &:active {
+        color: black;
+    }
+}
+
+.blog-posts {
+
+    margin-top: 3rem;
+
+    .blog-post {
+        margin: 3rem 0;
+        border-bottom: thin solid #cfcfcf;
+
+        &:nth-last-child(1) {
+            border: none;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .blog-date {
+        font-style: italic;
+        font-weight: 300;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+    }
+
+    .blog-title {
+        font-size: 2rem;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .blog-summary {
+        margin-bottom: 36px;
+        font-weight: 300;
+    }
+}
+
+.striked {
+    text-decoration: line-through;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+}
+
+.blog-name {
+    color: black;
+}

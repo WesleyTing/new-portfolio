@@ -1,0 +1,62 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the about page.
+// -----------------------------------------------------------------------------
+
+#info {
+    width: 100%;
+    resize: none;
+    padding: 12px;
+    line-height: 1.4;
+}
+
+.contact-form {
+    margin-left: 18px;
+    margin-right: 18px;
+
+    input, textarea {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        width: 100%;
+        padding: 4px 12px;
+    }
+
+    input {
+        line-height: 2;
+    }
+
+    .contact-name, .contact-email {
+        width: 100%;
+
+        @include respond-to('medium') {
+            width: 48%;
+        }
+    }
+
+    .contact-name-email {
+
+        
+        @include respond-to('medium') {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .submit-button {
+        display: block;
+        border: 0;
+        background: none;
+        background-color: $brand-color;
+        border-radius: 50%;
+        width: 52px;
+        height: 52px;
+        cursor: pointer;
+        margin: 26px auto 0;
+
+        i {
+            color: white;
+            margin: 0;
+        }
+
+    }
+}
+

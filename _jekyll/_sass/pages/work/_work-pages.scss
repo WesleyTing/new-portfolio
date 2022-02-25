@@ -1,0 +1,227 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to work pages.
+// -----------------------------------------------------------------------------
+
+
+// Custom colored header for work pages
+.work-header {
+
+    .left-container .nametag {
+        color: white;
+    }
+
+    .hamburger .bar {
+        background: white;
+    }
+
+    .nav-content a {
+        color: white;
+        z-index: 10;
+    }
+}
+
+.work-pages-main {
+
+    .icons {
+        display: block;
+    }
+
+    .fab {
+        color: black;
+    }
+
+}
+
+.hero-banner {
+
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;    
+    height: 300px;
+    position: relative;
+    z-index: 10;
+
+    .hero-banner-content {
+        max-width: 1400px;
+    }
+
+    @media (min-width:650px) {
+        height: 400px;
+    }
+
+    @include respond-to('large') {
+        height: 600px;
+    }
+
+    .hero-banner-image {
+        position: absolute;
+    }
+
+}
+
+.hero-banner-text {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    z-index: 50;
+
+    @media (min-width:650px) {
+        left: 10%;
+    }
+
+    h1, p {
+        color: white;
+        margin: 0;
+    }
+
+    h1 {
+
+        font-size: 2rem;
+
+        @media (min-width: 650px) {
+            font-size: 3.5rem;
+        }
+
+        @include respond-to('large') {
+            font-size: 6rem;
+        }
+
+    }
+
+    p {
+        font-weight: 200;
+
+        @media (min-width:650px) {
+            font-size: 1.5rem;
+        }
+
+        @include respond-to('large') {
+            font-size: 2rem;
+        }
+    }
+
+    a {
+        display: block;
+        width: 140px;
+        text-align: center;
+        border: 1px solid #003EDC;
+        border-radius: 6px;
+        padding: 12px 0;
+        color: white;
+        background-color: #003EDC;
+        font-family: $header-font-stack;
+        margin-top: 5rem;
+        font-size: 1rem;
+
+    }
+}
+
+
+.overview {
+
+    margin-bottom: 3rem;
+
+    h2 {
+        margin: 3rem 0 0;
+    }
+}
+
+
+
+.split-content {
+
+    @include respond-to('large') {
+        display: flex;
+        justify-content: space-between;
+    
+        .split-content-left {
+            width: 49%;
+        }
+    
+        .split-content-right {
+            width: 49%;
+        }
+    }
+
+}
+
+.split-content-left {
+
+    h2 {
+        font-size: 2.3rem;
+    }
+
+}
+
+.split-content-right {
+
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .work-pages-icons {
+        margin-bottom: 3rem;
+    }
+
+    .work-page-icon {
+        margin-bottom: 22px;
+        width: 40%;
+    }
+
+    p {
+        margin: 0;
+        align-content: center;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 40px;
+    }
+
+    .work-page-icon {
+        display: flex;
+        max-width: 120px;
+    }
+}
+
+
+// Table of Contents
+
+.toc {
+    background: #f9f9f9;
+    border: 1px solid #aaa;
+    display: table;
+    margin-bottom: 1em;
+    margin: 3rem auto;
+    
+    padding: 20px 80px;
+}
+
+.toc-content {
+    padding: 0;
+}
+
+.toc-title {
+    font-weight: 700;
+    text-align: center;
+}
+
+.toc li {
+    padding-bottom: 8px;
+    font-weight: 500;
+    // list-style: none;
+    line-height: 2rem;
+}
+
+
+.toc-sub-content li {
+    font-weight: 400;
+    color: grey;
+}
+
+.toc-section {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.toc-section:nth-child(1) {
+    margin-top: 30px;
+}

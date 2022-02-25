@@ -1,4 +1,5 @@
-@charset "UTF-8";
+---
+---
 
 // 1. Configuration and helpers
 @import
@@ -33,10 +34,8 @@
   'pages/about',
   'pages/contact',
   'pages/home',
-  'pages/form-success',
 
   // Work pages
-
   'pages/work/work-pages',
   'pages/work/token-studio',
   'pages/work/coco',
@@ -45,3 +44,9 @@
   'pages/work/ux-ui-portfolio',
   'pages/work/myfitcollection';
 
+
+// 7. Blog styles
+
+@import
+  'blog/blog-main',
+  'blog/jekyll-now';
