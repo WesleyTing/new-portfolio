@@ -432,10 +432,12 @@ p {
   align-items: center;
   padding-top: 18px;
   padding-bottom: 20px;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  }
   @media (min-width: 950px) {
     .top-bar {
-      padding-top: 2rem; } }
+      padding-top: 2rem;
+      } }
 
 .left-container {
   display: flex; }

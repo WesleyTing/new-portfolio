@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 
 <article class="post">
@@ -14,3 +15,7 @@ layout: default
   </div>
 
 </article>
+
+{% if page.comments %}
+  {% include disqus.html %}
+{% endif %}
