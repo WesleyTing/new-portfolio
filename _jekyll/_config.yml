@@ -60,3 +60,7 @@ destination: blog
 ]
 
 port: 7070
+
+
+disqus:
+  shortname: wesleyting
