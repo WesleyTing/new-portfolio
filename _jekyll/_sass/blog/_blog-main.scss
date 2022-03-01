@@ -59,3 +59,26 @@
 .blog-name {
     color: black;
 }
+
+.post-margin {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.iframe-margin {
+    margin: 0 auto;
+    display: block;
+}
+
+
+.post-title {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.language-html,
+.language-css,
+.language-javascript {
+    overflow: hidden;
+}
