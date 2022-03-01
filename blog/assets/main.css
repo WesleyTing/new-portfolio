@@ -531,9 +531,21 @@ footer .copyright { font-size: 16px; font-weight: 600; width: 50%; margin: 0; }
 
 .iframe-margin { margin: 0 auto; display: block; }
 
-.post-title { font-size: 2rem; margin-top: 2rem; margin-bottom: 2rem; }
+article iframe { margin-top: 3rem; margin-bottom: 3rem; }
+
+.post-title { font-size: 2rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+
+.post-date { margin-bottom: 3rem; }
 
 .language-html, .language-css, .language-javascript { overflow: hidden; }
+
+article h2 { margin-top: 3rem; }
+
+article img { max-width: 500px; display: block; margin: 3rem auto 0; }
+
+.post-footer { margin-top: 0; }
+
+.last-iframe { margin-bottom: 5rem; }
 
 /**************/
 /* BASE RULES */
