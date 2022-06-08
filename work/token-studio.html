@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wesley Ting</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/prism.css">
     <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
@@ -82,40 +83,35 @@
                             <li><a href="#overview">Project Overview</a></li>
                         </div>
                         <div class="toc-section">
-                            <li>Research</li>
+                            <li><a href="#work-research">Research</a></li>
                             <ol class="toc-sub-content" type="a">
-                                <li>Wireframe</li>
+                                <li><a href="#work-wireframe">Wireframe</a></li>
                             </ol>
                         </div>
                         <div class="toc-section">
-                            <li>Development</li>
+                            <li><a href="#work-development">Development</a></li>
                             <ol class="toc-sub-content" type="a">
-                                <li>Tools</li>
-                                <li>Conclusions</li>
-                                <li>Conclusions</li>
+                                <li><a href="#work-custom-code">Custom Code</a></li>
+                                <li><a href="#work-resources">Resources</a></li>
                             </ol>
                         </div>
                         <div class="toc-section">
-                            <li>Optimization</li>
+                            <li><a href="#work-optimization">Optimization</a></li>
                             <ol class="toc-sub-content" type="a">
-                                <li>SEO</li>
-                                <li>Code Cleanup</li>
+                                <li><a href="#work-seo">SEO</a></li>
                             </ol>
                         </div>
                     </ol>
                 </div>
 
-
-
-
-
             </div>
 
             <div class="split-content-right">
 
-                <div class="overview" id="overview">
+                <div class="work-overview" id="work-overview">
                     <h2>Project Overview</h2>
-                    <p>My name is Tew cat Ting. I have a mini cooper peepee stick. Do you want to touch it? Tiny, but very cute. Cheek loves it.</p>
+                    <p>Token Studio Inc. is a designer toys retailer selling a varierty of collectable figurines, blind boxes and toys.</p>
+                    <p>I teamed up with a graphic designer to completely redesign and revitalize their existing website that used Shopify's "Expanse" theme. The goal was to rebrand their store, and it was my job to display it beyond the average capabilities of their theme.</p>
                 </div>
 
                 <div class="tools-used">
@@ -123,18 +119,209 @@
                 </div>
 
                 <div class="work-pages-icons">
-                    <a class="tool-tip" data-tooltip-title="HTML5" data-tooltip-position="top" href="https://developer.mozilla.org/en-US/docs/Web/HTML"  class="work-page-icon">
+                    <span class="tool-tip" data-tooltip-title="HTML5" data-tooltip-position="top" class="work-page-icon">
                         <i class="fab fa-html5 fa-2x"></i>
-                    </a>
-                    <a class="tool-tip" data-tooltip-title="CSS3" data-tooltip-position="top" href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="work-page-icon">
+                    </span>
+                    <span class="tool-tip" data-tooltip-title="CSS3" data-tooltip-position="top" class="work-page-icon">
                         <i class="fab fa-css3-alt fa-2x"></i>
-                    </a>
-                    <a class="tool-tip" data-tooltip-title="Javascript" data-tooltip-position="top" href="https://www.javascript.com/" class="work-page-icon">
+                    </span>
+                    <span class="tool-tip" data-tooltip-title="Javascript" data-tooltip-position="top" class="work-page-icon">
                         <i class="fab fa-js-square fa-2x"></i>
-                    </a>
+                    </span>
                 </div>
             </div>
         </div>
+
+        <section class="work-content">
+
+            <div class="work-research" id="work-research">
+                <h2>Research</h2>
+                <p>The first thing we did was look at our competitors, and made a list of what they do better. We set our sights on matching the general aesthetics and design of our competitors.. The examples we used were from Popmart and Finding Unicorn. </p>
+
+                <img src="../images/work/token/grid-banner.png" alt="">
+
+                <p>We also recognized that Token Studio needed better branding, and in order to do that we needed to tackle the layout of the website to make it much more appealing.</p>
+
+            </div>
+
+            <div class="work-wireframe" id="work-wireframe">
+                <h3>Wireframe</h3>
+
+
+
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3HChaz91amMyMbXSczzOGO%2Ftoken%3Fnode-id%3D6%253A21" allowfullscreen></iframe>
+            </div>
+
+            <div class="work-development" id="work-development">
+
+                <h2>Development</h2>
+                
+                <p>While my tasks often overlapped with the graphic designer, I knew there were sections that only the developer could handle.
+                </p>
+
+                <p>My main tasks for the project were:</p>
+
+                <ul>
+                    <li>Adding custom content.</li>
+                    <li>Editing the design of Expanse's layouts.</li>
+                    <li>Implementing custom functions.</li>
+                </ul>
+
+            </div>
+
+            <div class="work-custom-code" id="work-custom-code">
+
+                <h3>Custom Code</h2>
+
+                <p>Most of it involved editing or adding things that weren't built into the default of the Shopify theme.</p>
+
+                <p>Like adding Wechat to their footer, and linking it directly to their account.</p>
+
+                
+
+<div class="code-container">
+
+<pre><code class="language-liquid">
+    {%- if settings.social_wechat_link != blank -%}
+    &lt;li>
+    &lt;a target="_blank" rel="noopener" href="{{ settings.social_wechat_link }}" 
+    title="{{ 'layout.footer.social_platform' | t: name: shop.name, platform: 'WeChat' }}">
+        &lt;svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-wechat" 
+        viewBox="0 0 1024 1024">&lt;path d="" fill="white"/>&lt;/svg>
+        &lt;span class="icon__fallback-text">WeChat&lt;/span>
+    &lt;/a>
+    &lt;/li>
+    {%- endif -%}
+
+</code></pre>
+
+</div>
+
+<p>Or a function that shows how many are left in stock. 
+
+<div class="code-container">
+<pre><code class="language-liquid">
+    {%- when 'inventory_status' -%}
+    {%- render 'product-inventory', product: 
+    product, current_variant: current_variant, block: block -%}
+
+</code></pre>
+</div>
+
+<p>which leads to the "product-inventory.liquid" page that uses the code:</p>
+
+<div class="code-container">
+
+<pre><code class="language-liquid">
+    &lt;span class="icon-and-text{% if inventory_visible == true %} inventory--low{% endif %}
+        {% unless current_variant.available %} hide{% endunless %}">
+        &lt;span data-product-inventory data-threshold="{{ block.settings.inventory_threshold }}">
+        {%- if inventory_visible -%}
+            {{ 'products.product.stock_label' | t: count: current_variant.inventory_quantity }}
+        &lt;/span>
+    &lt;/span>
+
+</code></pre>
+
+<div class="code-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, molestiae!</div>
+
+</div>
+                
+                <p>The majority of code editing required was for basic functions here and there, and the other bulk of the work was CSS. Like customizing the blog section to make it fit our design.</p>
+
+<div class="code-container">
+<pre><code class="language-css">
+    .custom-blog-posts {
+      overflow: hidden;
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+    
+    .custom-blog-posts .h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #757FD8;
+    }
+    
+    .custom-blog-posts .btn--secondary {
+      border: none;
+      padding: 0;
+      text-align: left;
+      font-weight: 600;
+      text-decoration: underline;
+      transition: color 0.3s ease-in-out;
+    }
+    
+     .custom-blog-posts .btn--secondary:hover {
+      	color: grey;
+    }
+    
+    .custom-blog-posts .rte-setting>p:last-child {
+    	max-width: 400px;
+    	margin: 0 auto;
+    }
+
+</code></pre>
+</div>
+
+            </div>
+
+
+            <div class="work-resources" id="work-resources">
+
+                <h3>Resources</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit error dolore pariatur aliquid, quas temporibus libero, iste maiores qui repellendus vitae corporis fuga at optio sint! Dolore, placeat porro.</p>
+
+            </div>
+
+
+            <div class="work-optimization" id="work-optimization">
+
+                <h2>Optimization</h2>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique suscipit error dolore pariatur aliquid, quas temporibus libero, iste maiores qui repellendus vitae corporis fuga at optio sint! Dolore, placeat porro.</p>
+
+                <p class="coming-soon">Coming Soon...</p>
+
+            </div>
+
+            <div class="work-seo" id="work-seo">
+
+                <h3>SEO</h3>
+
+                <p class="coming-soon">Coming Soon...</p>
+
+            </div>
+            
+            <div class="work-view-website">
+
+                <h2>View Website</h2>
+
+                <div class="macbook-mockup-wrapper">
+
+                    <div class="macbook">
+                        <div class="screen">
+                        <div class="viewport">
+                            <img id="laptop-image" src="../images/work/token/laptop-content.jpg" alt="Scrollable laptop content with entire website screenshot">
+                        </div>
+                        </div>
+                        <div class="base"></div>
+                        <div class="notch"></div>
+                    </div>
+        
+                    <div class="laptop-buttons-wrapper">
+                        <button class="laptop-before" onclick=before();>Before</button>
+                        <button class="laptop-after" onclick=after();>After</button>
+                    </div>
+        
+                </div> 
+                
+                <a class="website-link" href="">Click here to view the whole website!</a>
+            </div>
+
+            
+        </section>
 
 
     </main>
@@ -152,7 +339,10 @@
         
     </footer>
 
+
     <script src="../scripts/jquery-3.5.1.min.js"></script>
     <script src="../scripts/script.js"></script>
+    <script src="../scripts/prism.js"></script>
+    <script src="../scripts/changeLaptopImage.js"></script>
 </body>
 </html>
