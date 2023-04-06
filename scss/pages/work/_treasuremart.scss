@@ -1,0 +1,24 @@
+.main-treasuremart {
+    
+    section {
+        max-width: 1000px;
+        margin: 0 auto
+    }
+
+
+    @media (min-width: 900px) {
+        .tab-buttons {
+            flex: 0.4;
+        
+        }
+    }
+
+
+    @media (min-width: 900px) {
+        .video-container {
+            width: 100%;
+            flex: 1;
+        }
+    }
+
+}

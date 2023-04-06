@@ -9,6 +9,7 @@
     left: 32px;
     transition: opacity .1s ease-in-out;
     pointer-events: none;
+    align-items: flex-end;
 }
 
 .fab, .fas {
@@ -37,3 +38,16 @@
     text-transform: uppercase;
 }
 
+
+.icon-wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 0.5rem; /* Add some spacing between the icons */
+  }
+  
+  .custom-icon {
+    width: 52px; /* Adjust the width as needed */
+    position: absolute;
+    height: auto;
+  }
+  

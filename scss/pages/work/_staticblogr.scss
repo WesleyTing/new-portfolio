@@ -1,0 +1,38 @@
+.projects-main {
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+.project-link {
+    display: block;
+    text-align: center;
+
+    span {
+        margin-left: 6px
+    }
+
+    .material-symbols-outlined {
+        font-size: 18px;
+    }
+
+}
+
+
+.static-blogr-intro {
+    margin-top: 2rem;
+
+    .work-pages-icons {
+        margin-bottom: 2rem;
+    }
+}
+
+
+.static-blogr-preview {
+    margin-top: 4rem;
+
+    a img {
+        margin: 0 auto;
+        display: block;
+
+    }
+}

@@ -439,6 +439,9 @@ p {
 .highlight {
   color: #0400ff; }
 
+.p-max-width {
+  max-width: 850px; }
+
 /**
  * Clear inner floats
  */
@@ -565,6 +568,7 @@ p {
 .overlay {
   opacity: 0;
   position: fixed;
+  visibility: hidden;
   width: 100%;
   height: 100%;
   top: 0;
@@ -579,6 +583,7 @@ p {
   pointer-events: none; }
   .show .overlay {
     display: block;
+    visibility: visible;
     opacity: 1;
     pointer-events: visible; }
   .overlay li {
@@ -737,6 +742,15 @@ footer {
 
 .work-6 {
   background-image: url("../images/preview-images/token-studio.webp"); }
+
+.work-7 {
+  background-image: url("../images/preview-images/full-circle.png"); }
+
+.work-8 {
+  background-image: url("../images/preview-images/staticblogr.png"); }
+
+.work-9 {
+  background-image: url("../images/preview-images/treasuremart.png"); }
 
 .macbook {
   padding-bottom: 18px;
@@ -900,7 +914,8 @@ footer {
   bottom: 26px;
   left: 32px;
   transition: opacity .1s ease-in-out;
-  pointer-events: none; }
+  pointer-events: none;
+  align-items: flex-end; }
 
 .fab, .fas {
   margin: 0 16px;
@@ -922,6 +937,18 @@ footer {
   color: white;
   z-index: 10;
   text-transform: uppercase; }
+
+.icon-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 0.5rem;
+  /* Add some spacing between the icons */ }
+
+.custom-icon {
+  width: 52px;
+  /* Adjust the width as needed */
+  position: absolute;
+  height: auto; }
 
 .tool-tip {
   position: relative;
@@ -1287,6 +1314,9 @@ footer {
       .intro .intro-description {
         font-size: 28px; } }
 
+.recent-projects {
+  margin-bottom: 3rem; }
+
 .form-success .form-success-title {
   margin-top: 2rem;
   margin-bottom: 0; }
@@ -1531,5 +1561,131 @@ footer {
     @media (min-width: 1200px) {
       .hero-banner-token .hero-banner-image {
         margin-right: -80px; } }
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto; }
+
+.tab-buttons {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column; }
+
+.tab-btn {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  text-align: left;
+  transition: 0.3s;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 3px; }
+
+.tab-btn:hover {
+  background-color: #ddd; }
+
+.video-container {
+  position: relative;
+  padding-bottom: 100%;
+  /* 16:9 aspect ratio */
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto; }
+
+.video {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
+  /* Add a black background for videos with different aspect ratios */ }
+
+.tab-btn-selected {
+  background-color: #4f4ffa;
+  color: white; }
+
+.tab-btn-selected:hover {
+  background-color: rgba(79, 79, 250, 0.774); }
+
+.tab-video-wrapper {
+  display: flex;
+  flex-direction: column-reverse; }
+
+@media (min-width: 768px) {
+  /* Change the value to your desired breakpoint */
+  .tab-video-wrapper {
+    flex-direction: row; }
+
+  .tab-buttons {
+    flex: 0.4; }
+
+  .video-container {
+    padding-bottom: 80%;
+    /* 16:9 aspect ratio */
+    width: 50%; } }
+@media (min-width: 900px) {
+  /* Change the value to your desired breakpoint */
+  .tab-buttons {
+    margin-right: 1rem;
+    /* Adjust the spacing between the tabs and the video container */
+    flex: 0.3; }
+
+  .video-container {
+    padding-bottom: 70%;
+    /* 16:9 aspect ratio */
+    width: 50%; } }
+.full-circle-intro {
+  margin-top: 3rem; }
+
+.full-circle-p {
+  margin-bottom: 2rem; }
+
+.project-links {
+  margin-bottom: 2rem; }
+
+.tools-used {
+  margin-bottom: 3rem; }
+
+.projects-main {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+.project-link {
+  display: block;
+  text-align: center; }
+  .project-link span {
+    margin-left: 6px; }
+  .project-link .material-symbols-outlined {
+    font-size: 18px; }
+
+.static-blogr-intro {
+  margin-top: 2rem; }
+  .static-blogr-intro .work-pages-icons {
+    margin-bottom: 2rem; }
+
+.static-blogr-preview {
+  margin-top: 4rem; }
+  .static-blogr-preview a img {
+    margin: 0 auto;
+    display: block; }
+
+.main-treasuremart section {
+  max-width: 1000px;
+  margin: 0 auto; }
+@media (min-width: 900px) {
+  .main-treasuremart .tab-buttons {
+    flex: 0.4; } }
+@media (min-width: 900px) {
+  .main-treasuremart .video-container {
+    width: 100%;
+    flex: 1; } }
 
 /*# sourceMappingURL=style.css.map */
